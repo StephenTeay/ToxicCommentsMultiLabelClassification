@@ -11,7 +11,10 @@ import nltk
 # print(sklearn.__version__)
 @st.cache_data
 def download_stopwords():
-    nltk.download('stopwords')
+    try:
+        nltk.data.find('corpora/stopwords.zip')
+    except LookupError:
+        nltk.download('stopwords')
 
 @st.cache_data
 def load_model():
