@@ -5,16 +5,21 @@ from nltk.corpus import stopwords
 import warnings
 import re
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
-import nltk
 
 # import sklearn
 # print(sklearn.__version__)
 @st.cache_data
 def download_stopwords():
-    try:
-        nltk.data.find('corpora/stopwords.zip')
-    except LookupError:
-        nltk.download('stopwords')
+    import os
+    import nltk
+
+    nltk_data_dir = "./resources/nltk_data_dir/"
+    if not os.path.exists(nltk_data_dir):
+        os.makedirs(nltk_data_dir, exist_ok=True)
+    nltk.data.path.clear()
+    nltk.data.path.append(nltk_data_dir)
+    nltk.download("stopwords", download_dir=nltk_data_dir)
+    nltk.download('punkt', download_dir=nltk_data_dir)
 
 @st.cache_data
 def load_model():
