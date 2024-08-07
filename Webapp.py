@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pickle
 from nltk.stem.snowball import SnowballStemmer
@@ -5,15 +6,23 @@ from nltk.corpus import stopwords
 import warnings
 import re
 warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
-import nltk
 
 # import sklearn
 # print(sklearn.__version__)
+<<<<<<< HEAD
 try:
     stopwords = set(nltk.corpus.stopwords.words("english"))
 except LookupError:
     nltk.download("stopwords")
     stopwords = set(nltk.corpus.stopwords.words("english"))
+=======
+
+@st.cache_data
+def download_stopwords():
+    import os
+    import nltk
+
+
 
 @st.cache_data
 def load_model():
