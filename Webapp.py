@@ -9,12 +9,11 @@ import nltk
 
 # import sklearn
 # print(sklearn.__version__)
-@st.cache_data
-def download_stopwords():
-    try:
-        nltk.data.find('corpora/stopwords.zip')
-    except LookupError:
-        nltk.download('stopwords')
+try:
+    stopwords = set(nltk.corpus.stopwords.words("english"))
+except LookupError:
+    nltk.download("stopwords")
+    stopwords = set(nltk.corpus.stopwords.words("english"))
 
 @st.cache_data
 def load_model():
@@ -24,7 +23,7 @@ def load_model():
 
 LR_pipeline = load_model()
 stemmer = SnowballStemmer('english')
-stopwords = set(stopwords.words('english'))
+
 
 @st.cache_data
 def remove_stopwords(text):
