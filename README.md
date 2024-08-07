@@ -43,15 +43,22 @@ The Pre Processing is done in 3 steps:
 ## **Metrics Used:** 
 - **Roc-Auc** 
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 - **Accuracy** 
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
+
+
 
 - **Classification Report**
-![img_1.png](img_1.png)
+
+![img_1.png](images/img_1.png)
+
+
 - **Roc Curve**
-![img.png](img.png)
+
+
+![img.png](images/img.png) 
 
 ---
 # **Running the Model**
