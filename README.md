@@ -2,6 +2,8 @@
 
 This ML model classifies text on various types of toxic content it containts 
 
+![img.png](images/toxic%20classification.gif) 
+
 These toxic Lables include:
 >toxic \
 severe_toxic \
