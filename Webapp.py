@@ -83,7 +83,7 @@ if st.button("Classify"):
             if result_tags:
                 st.write(f"Tags: {', '.join(result_tags)}")
             else:
-                st.write("NON TOXIC")
+                st.write("Unable to classify at this time")
     else:
         st.write("Please enter text to classify.")
 
@@ -145,7 +145,7 @@ st.markdown("""
     }
     </style>
     <div class="footer">
-        <p>Created by Kushaagra</p>
+        <p>by Teay</p>
     </div>
     """, unsafe_allow_html=True)
 
