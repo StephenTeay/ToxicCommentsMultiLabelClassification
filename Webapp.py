@@ -83,7 +83,7 @@ if st.button("Classify"):
             if result_tags:
                 st.write(f"Tags: {', '.join(result_tags)}")
             else:
-                st.write("Unable to classify at this time")
+                st.write("None Toxic")
     else:
         st.write("Please enter text to classify.")
 
