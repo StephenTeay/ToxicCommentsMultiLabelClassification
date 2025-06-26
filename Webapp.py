@@ -96,17 +96,17 @@ accuracy = 91.82
 classification_rep = """
                precision    recall  f1-score   support
 
-        toxic       0.91      0.62      0.74      3056
- severe_toxic       0.58      0.27      0.37       321
-      obscene       0.91      0.64      0.75      1715
-       threat       0.62      0.14      0.22        74
-       insult       0.81      0.51      0.63      1614
-identity_hate       0.70      0.16      0.26       294
+        toxic       91      62      74      3056
+ severe_toxic       58      27      37       321
+      obscene       91      64      75      1715
+       threat       62      14      22        74
+       insult       81      51      63      1614
+identity_hate       70      16      26       294
 
-    micro avg       0.87      0.56      0.68      7074
-    macro avg       0.75      0.39      0.50      7074
- weighted avg       0.86      0.56      0.67      7074
-  samples avg       0.06      0.05      0.05      7074
+    micro avg       87      56      68      7074
+    macro avg       75      39      50      7074
+ weighted avg       86      56      67      7074
+  samples avg       6      5      5      7074
 """
 
 # Streamlit app
