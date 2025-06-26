@@ -64,7 +64,7 @@ def text_cleaning(text):
 
 st.title('Toxic Comments - Multi Label Classification')
 st.text("The Model Clasasifies the provided text and tags it the following:")
-st.text("toxic, severe_toxic, obscene, threa, insult, identity_hate")
+st.text("toxic, severe_toxic, obscene, threat, insult, identity_hate")
 user_input = st.text_area("Enter text for classification:")
 
 
