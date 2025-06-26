@@ -91,8 +91,8 @@ if st.button("Classify"):
 
 # Metrics
 
-roc_auc = 98
-accuracy = 97
+roc_auc = 97.90
+accuracy = 91.82
 classification_rep = """
                precision    recall  f1-score   support
 
