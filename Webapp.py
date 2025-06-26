@@ -116,8 +116,8 @@ st.title('Model Performance Metrics')
 col1, col2 = st.columns(2)
 
 with col1:
-    st.metric(label="ROC-AUC", value=f"{roc_auc:.4f}")
-    st.metric(label="Accuracy", value=f"{accuracy:.4f}")
+    st.metric(label="ROC-AUC", value=f"{roc_auc}")
+    st.metric(label="Accuracy", value=f"{accuracy}")
 
 with col2:
     st.write("Classification Report:")
